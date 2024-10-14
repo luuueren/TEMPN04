@@ -266,3 +266,15 @@
 .m-20 {
     margin: 20px;
 }
+
+.b-none {
+    border: none;
+}
+
+.b-ccc {
+    border: 1px solid #ccc;
+}
+
+.m-15 {
+    margin: 15px;
+}
