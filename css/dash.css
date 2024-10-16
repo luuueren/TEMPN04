@@ -1212,8 +1212,445 @@ ul {
 }
 
 /* end activities  */
-
-
-
 /* end other data  */
 /* end profile page  */
+
+/* start projects page  */
+.projects-page {
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+@media(max-width:767px) {
+    .projects-page {
+        grid-template-columns: minmax(200px, 1fr);
+        margin-right: 10px;
+        margin-left: 10px;
+        gap: 10px;
+    }
+}
+
+.projects-page .project .date {
+    position: absolute;
+    right: 10px;
+    top: 10px
+}
+
+.projects-page .project h4 {
+    font-weight: normal;
+}
+
+.projects-page .project .team {
+    position: relative;
+    min-height: 80px;
+}
+
+.projects-page .project .team a {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.projects-page .project .team a:hover {
+    z-index: 100;
+}
+
+.projects-page .project .team a:nth-child(2) {
+    left: 25px;
+}
+
+.projects-page .project .team a:nth-child(3) {
+    left: 50px;
+}
+
+.projects-page .project .team a:nth-child(4) {
+    left: 75px;
+}
+
+.projects-page .project .team a:nth-child(5) {
+    left: 100px;
+}
+
+.projects-page .project .team img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 2px solid white;
+}
+
+.projects-page .project .skl {
+    justify-content: flex-end;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+.projects-page .project .skl span {
+    padding: 3px 8px;
+    margin-left: 6px;
+    width: fit-content;
+}
+
+@media(max-width:767px) {
+    .projects-page .project .skl {
+        flex-direction: column;
+    }
+}
+
+@media(max-width:767px) {
+    .projects-page .project .skl span:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
+
+.projects-page .project .info {
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+.projects-page .project .info .prog {
+    position: relative;
+    height: 8px;
+    width: 200px;
+}
+
+.projects-page .project .info .prog span {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+@media(max-width:767px) {
+    .projects-page .project .info {
+        flex-direction: column;
+    }
+
+    .projects-page .project .info .prog {
+        margin-bottom: 15px;
+    }
+}
+
+/* end projects page  */
+
+/* start courses page  */
+.courses {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+@media(max-width:767px) {
+    .courses {
+        grid-template-columns: minmax(200px, 1fr);
+        margin-right: 10px;
+        margin-left: 10px;
+        gap: 10px;
+    }
+}
+
+.courses .course {
+    overflow: hidden;
+}
+
+.courses .course .cover {
+    max-width: 100%;
+}
+
+.courses .course .instructor {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 20px;
+    border-radius: 50%;
+    border: 2px solid white;
+    top: 20px;
+}
+
+.courses .course .description {
+    line-height: 1.5;
+}
+
+.courses .course .info {
+    border-top: 1px solid #eee;
+    font-size: 13px;
+}
+
+.courses .course .info .title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -13px;
+    height: 24px;
+}
+
+/* end courses page  */
+
+/* start friends  */
+.friends {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+@media(max-width:767px) {
+    .friends {
+        grid-template-columns: minmax(200px, 1fr);
+        margin-right: 10px;
+        margin-left: 10px;
+        gap: 10px;
+    }
+}
+
+.friends .friend .contact {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.friends .friend .contact i {
+    padding: 10px;
+    font-size: 13px;
+    background-color: #eee;
+    color: #666;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.friends .friend .contact i:hover {
+    background-color: var(--blue-color);
+    color: white;
+}
+
+.friends .friend .icons {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin-top: 15px;
+    padding-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+.friends .friend .icons i {
+    margin-right: 5px;
+}
+
+.friends .friend .icons .vip {
+    position: absolute;
+    font-size: 50px;
+    right: 0;
+    opacity: 0.3;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.friends .friend .info span {
+    font-size: 10px;
+}
+
+.friends .friend .info a {
+    font-size: 13px;
+}
+
+/* end friends  */
+
+/* start files page   */
+.files-page {
+    flex-direction: row-reverse;
+    align-items: flex-start;
+}
+
+@media(max-width:767px) {
+    .files-page {
+        flex-direction: column;
+        align-items: normal;
+    }
+}
+
+/* start stats  */
+.files-page .files-stats {
+    min-width: 260px;
+}
+
+.files-page .files-stats .icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+
+}
+
+.files-page .files-stats .blue {
+    background-color: rgb(0 117 255 / 20%);
+}
+
+.files-page .files-stats .orange {
+    background-color: rgb(245 158 11 / 20%);
+}
+
+.files-page .files-stats .green {
+    background-color: rgb(34 197 94 / 20%);
+}
+
+.files-page .files-stats .red {
+    background-color: rgb(244 67 54 / 20%);
+}
+
+.files-page .files-stats .size {
+    margin-left: auto;
+}
+
+.files-page .files-stats .upload {
+    margin: 15px auto 0;
+    padding: 10px 15px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.files-page .files-stats .upload:hover {
+    background-color: var(--blue-alt-color);
+}
+
+.files-page .files-stats .upload:hover i {
+    animation: go-up 0.8s linear infinite;
+    -webkit-animation: go-up 0.8s infinite;
+}
+
+@keyframes go-up {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+        -webkit-transform: translateY(-5px);
+        -moz-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+        -o-transform: translateY(-5px);
+    }
+}
+
+/* end stats  */
+
+/* start content  */
+
+
+.files-page .files-content {
+    flex: 1;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.files-page .files-content .icon img {
+    width: 64px;
+    height: 64px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.files-page .files-content .icon img:hover {
+    transform: rotate(6deg);
+    -webkit-transform: rotate(6deg);
+    -moz-transform: rotate(6deg);
+    -ms-transform: rotate(6deg);
+    -o-transform: rotate(6deg);
+}
+
+.files-page .files-content .info {
+    border-top: 1px solid #eee;
+}
+
+/* end content  */
+/* end files page */
+
+/* start plans page  */
+.plans-page {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+@media(max-width:767px) {
+    .plans-page {
+        grid-template-columns: minmax(200px, 1fr);
+        margin-right: 10px;
+        margin-left: 10px;
+        gap: 10px;
+    }
+}
+
+.plans-page .plan .top {
+    border: 3px solid white;
+    outline: 3px solid transparent;
+}
+
+.plans-page .plan.green .top {
+    outline-color: var(--green-color);
+}
+
+.plans-page .plan.blue .top {
+    outline-color: var(--blue-color);
+}
+
+.plans-page .plan.orange .top {
+    outline-color: var(--orange-color);
+}
+
+.plans-page .plan .price {
+    position: relative;
+    font-size: 40px;
+    width: fit-content;
+    margin: auto;
+}
+
+.plans-page .plan .price span {
+    position: absolute;
+    font-size: 25px;
+    top: 0;
+    left: -20px;
+}
+
+.plans-page .plan ul li {
+    padding: 15px 0;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+}
+
+.plans-page .plan ul li .yes {
+    color: var(--green-color);
+}
+
+.plans-page .plan ul li i:not(.yes, .help) {
+    color: var(--red-color);
+}
+
+.plans-page .plan ul li i:first-child {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.plans-page .plan ul li .help {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+/* end plans page  */
